@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.car {
+			top: 500px;
+			left: 0px;
+			transition: 3s;
+			width: 50px;
+			position: absolute;
+		}
+		.finish {
+			top: 50px;
+			left: 0px;
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<img class="finish" src="finish.png">
+	<img class="car" src="car1.png" style="left: 50px;">
+	<img class="car" src="car2.png" style="left: 150px;">
+	<img class="car" src="car3.png" style="left: 250px;">
+	<img class="car" src="car4.png" style="left: 350px;">
+	<img class="car" src="car5.png" style="left: 450px;">
+	<script type="text/javascript">
+		let finish = document.querySelector('.finish');
+		let cars = document.querySelectorAll('.car');
+		finish.onclick = function(){
+			cars[0].style.top = '30px';
+			cars[1].style.top = '30px';
+			cars[2].style.top = '30px';
+			cars[3].style.top = '30px';
+			cars[4].style.top = '30px';
+		}
+	</script>
+</body>
+</html>
